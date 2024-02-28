@@ -27,9 +27,9 @@ function switchRatio() {
 buttonSwitch.addEventListener('click', switchRatio)
 
 function convert() {
-    if (inputBar.textContent.length === 0)
+    if (inputBar.value.length === 0)
         return
-    let amount = parseFloat(inputBar.textContent)
+    let amount = parseFloat(inputBar.value)
     let convertedAmount = amount * ratio
     result.textContent = convertedAmount
 }
